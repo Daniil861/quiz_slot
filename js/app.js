@@ -33,7 +33,7 @@
     }
     if (sessionStorage.getItem("page-name")) {
         if (document.querySelector(".name")) document.querySelector(".name").classList.add("_hide");
-        if (document.querySelector(".header__player-name")) document.querySelector(".header__player-name").textContent = sessionStorage.getItem("name");
+        if (document.querySelector(".header__player-name")) if (sessionStorage.getItem("name")) document.querySelector(".header__player-name").textContent = sessionStorage.getItem("name"); else document.querySelector(".header__player-name").textContent = "Player#1";
     }
     if (sessionStorage.getItem("money")) if (document.querySelector(".header__money")) document.querySelector(".header__money").textContent = `${sessionStorage.getItem("money")}$`;
     const preloader = document.querySelector(".preloader");
@@ -102,7 +102,7 @@
                 }), 1e3);
             }), 4400);
         }
-        if (!targetElement.closest(".score__body") && document.querySelector(".score").classList.contains("_visible")) start_game();
+        if (targetElement.closest(".score")) if (!targetElement.closest(".score__body") && document.querySelector(".score").classList.contains("_visible")) start_game();
         if (targetElement.closest(".header-game__half")) {
             document.querySelector(".header-game__half").classList.add("_no-active");
             check_answer();
