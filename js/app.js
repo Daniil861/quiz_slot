@@ -418,6 +418,10 @@
             } else if (5 == sessionStorage.getItem("game")) {
                 document.querySelector(".score__target_four").classList.remove("_active");
                 document.querySelector(".score__target_five").classList.add("_active");
+                document.querySelector(".score__target_four").classList.add("_visible");
+                setTimeout((() => {
+                    document.querySelector(".score__target_four").classList.remove("_visible");
+                }), 2e3);
             }
         }), 1e3);
     }
