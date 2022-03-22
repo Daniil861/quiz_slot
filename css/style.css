@@ -554,7 +554,6 @@ body._loaded {
   top: 4px;
 }
 .bonus__arrow._not-active {
-  background: linear-gradient(180deg, #42403d 0%, #e2d4b2 100%);
   pointer-events: none;
   transform: rotate(360deg);
   transition: transform 3.5s ease-in;
@@ -799,7 +798,6 @@ body._loaded {
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  row-gap: 1.875rem;
 }
 .score__target {
   width: 100%;
@@ -809,7 +807,10 @@ body._loaded {
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 0.875rem;
-  padding: 0 0.3125rem;
+  padding: 0.3125rem;
+}
+.score__target:not(:last-child) {
+  margin-top: 0.625rem;
 }
 .score__target._active .score__money::before {
   animation: move-points-game 1.5s ease-out 2s forwards;
