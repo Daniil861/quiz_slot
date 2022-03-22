@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Quiz Slot - Game</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220322151805">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="preloader">
+		<div class="preloader__acces acces-preloader">
+			<div class="acces-preloader__title">
+				Privacy Policy
+			</div>
+			<div class="acces-preloader__text text-pre">
+				Introduction <br>
+				Our privacy policy (the "Privacy Policy") explains what information we collect, how we use and share it,
+				and how you can manage your privacy settings and rights in connection with your use of our mobile
+				application (collectively, the "Services"). Please also read the Terms of Service, which describes the
+				terms of use of the Services.
+			</div>
+
+			<div class="acces-preloader__text text-pre">
+				Information that the application collects <br>
+				“Quiz Slot” collects information about you, including information that directly or indirectly identifies
+				you, if you or other users provide such information. Information is obtained through a number of
+				different methods, including the processes of tracking, completing or downloading metrics using the
+				Services. The Application also collects information about how you use the Services. In addition, you have
+				several ways to provide information about yourself and your friends.
+				<ul class="preloader__list">
+					<li class="preloader__text text-pre text-pre_list-main">The following types of personal data may be
+						collected, stored and used:</li>
+					<li class="preloader__text text-pre text-pre_list">information about your device, including your IP
+						address, geographic location, phone type and version,
+						and operating system, bid number device;</li>
+					<li class="preloader__text text-pre text-pre_list">information such as your email address;</li>
+					<li class="preloader__text text-pre text-pre_list">information you enter when you create a profile on
+						our app, such as your name, profile photos, gender, birthday;</li>
+					<li class="preloader__text text-pre text-pre_list">information you enter when using the services in
+						our application; </li>
+					<li class="preloader__text text-pre text-pre_list">information relating to anything you purchase,
+						services you use, or transactions you make through our application, including your name, address,
+						phone number, email address;</li>
+					<li class="preloader__text text-pre text-pre_list">any other personal information you send to us.</li>
+				</ul>
+			</div>
+
+			<div class="acces-preloader__text text-pre">
+				Other information <br>
+				We may collect information about you through third parties, for example by receiving feedback through
+				surveys. <br>
+				We may collect information about you from other users who may provide feedback or comments about your
+				workouts.
+			</div>
+			<button type="button" class="acces-preloader__button button">
+				<p>Apply</p>
+			</button>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="wrapper__loose loose">
+			<div class="loose__body">
+				<div class="loose__text">You loose!</div>
+				<a href="game.html" class="loose__button button button_red">
+					<p>Play again</p>
+				</a>
+			</div>
+		</div>
+		<div class="wrapper__play play">
+			<div class="play__body">
+				<div class="play__text">CONGRATULATIONS!</div>
+				<div class="play__text">You win 1.000.000$!</div>
+				<a href="game.html" class="play__button button button_red">
+					<p>Play again</p>
+				</a>
+				<a href="index.html" class="play__button play__button_home button button_home">
+					<p>quit</p>
+				</a>
+			</div>
+		</div>
+		<div class="wrapper__game game">
+			<div class="game__header header-game">
+				<a href="index.html" class="header-game__button button button_home">
+					<p>quit</p>
+				</a>
+				<div class="header-game__actives">
+					<button type="button" class="header-game__time">
+						<img src="img/icons/arrows-rotate.svg" alt="Icon">
+						<span class="header-game__time-closet closet"></span>
+					</button>
+					<button type="button" class="header-game__half">
+						<p>x2</p>
+						<span class="header-game__half-closet closet"></span>
+					</button>
+				</div>
+				<div class="header-game__timer">
+					<p>30</p>
+				</div>
+			</div>
+			<div class="game__body">
+				<div class="game__question"></div>
+				<div class="game__answers">
+					<div class="game__answer game__answer_one">
+						<div class="game__icon">
+							a
+						</div>
+						<button type="button" class="game__item  game__item_two">
+							<span></span>
+							<span class="game__variant game__variant-a"></span>
+						</button>
+					</div>
+					<div class="game__answer game__answer_two">
+						<div class="game__icon">
+							b
+						</div>
+						<button type="button" class="game__item game__item_two">
+							<span></span>
+							<span class="game__variant game__variant-b"></span>
+						</button>
+					</div>
+					<div class="game__answer game__answer_three">
+						<div class="game__icon">
+							c
+						</div>
+						<button type="button" class="game__item game__item_three">
+							<span></span>
+							<span class="game__variant game__variant-c"></span>
+						</button>
+					</div>
+					<div class="game__answer game__answer_four">
+						<div class="game__icon">
+							d
+						</div>
+						<button type="button" class="game__item game__item_four">
+							<span></span>
+							<span class="game__variant game__variant-d"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="game__score score">
+				<div class="score__body">
+					<div class="score__target score__target_one _active">
+						<div class="score__number">1</div>
+						<div class="score__money">8.000$</div>
+					</div>
+					<div class="score__target score__target_two">
+						<div class="score__number">2</div>
+						<div class="score__money">10.000$</div>
+					</div>
+					<div class="score__target score__target_three">
+						<div class="score__number">3</div>
+						<div class="score__money">500.000$</div>
+					</div>
+					<div class="score__target score__target_four">
+						<div class="score__number">4</div>
+						<div class="score__money">700.000$</div>
+					</div>
+					<div class="score__target score__target_five">
+						<div class="score__number">5</div>
+						<div class="score__money">1000.000$</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220322151805"></script>
+</body>
+
+</html>
