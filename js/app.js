@@ -72,6 +72,8 @@
             page_enter_name.classList.remove("_visible");
         }
         if (targetElement.closest(".bonus__arrow")) {
+            if (document.querySelector(".bonus__box-body").classList.contains("_hide")) document.querySelector(".bonus__box-body").classList.remove("_hide");
+            if (document.querySelector(".bonus__prize").classList.contains("_visible")) document.querySelector(".bonus__prize").classList.remove("_visible");
             document.querySelector(".bonus__ball_zero").classList.add("_anim-zero");
             document.querySelector(".bonus__ball_three").classList.add("_anim-three");
             document.querySelector(".bonus__ball_double-three").classList.add("_anim-double-three");
@@ -97,6 +99,14 @@
                 header_money.innerHTML = `${money2 + bonus_count}$`;
                 sessionStorage.setItem("money", money2 + bonus_count);
                 header_money.classList.add("_anim-add-money");
+                document.querySelector(".bonus__arrow").classList.remove("_not-active");
+                document.querySelector(".bonus__ball_zero").classList.remove("_anim-zero");
+                document.querySelector(".bonus__ball_three").classList.remove("_anim-three");
+                document.querySelector(".bonus__ball_double-three").classList.remove("_anim-double-three");
+                document.querySelector(".bonus__ball_five").classList.remove("_anim-five");
+                document.querySelector(".bonus__ball_six").classList.remove("_anim-six");
+                document.querySelector(".bonus__ball_seven").classList.remove("_anim-seven");
+                document.querySelector(".bonus__ball_nine").classList.remove("_anim-nine");
                 setTimeout((() => {
                     header_money.classList.remove("_anim-add-money");
                 }), 1e3);
